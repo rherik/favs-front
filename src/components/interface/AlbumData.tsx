@@ -1,6 +1,7 @@
 export interface AlbumData {
-    id: number,
+    id?: number,
     name: string,
+    foto: string,
     kind: string,
     creator: string,
     release_date: string,
