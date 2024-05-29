@@ -1,5 +1,5 @@
-import './App.css';
 import { useState } from 'react';
+import './App.css';
 import { Card } from './components/card/card';
 import { CreateModal } from './components/create-modal/create-modal';
 import { useAlbumData } from './components/hooks/useAlbumData';
