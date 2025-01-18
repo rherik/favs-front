@@ -2,7 +2,7 @@ import { useMutation, useQueryClient } from "@tanstack/react-query";
 import axios, { AxiosPromise } from "axios";
 import { AlbumData } from "../interface/AlbumData";
 
-const API_URL = 'http://localhost:5000';
+const API_URL = import.meta.env.VITE_API_URL;
 
 const postData = async (data: AlbumData): AxiosPromise<any> => {
     const response = axios.post(API_URL + '/albuns', data);
