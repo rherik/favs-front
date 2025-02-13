@@ -1,20 +1,45 @@
 .card {
     display: flex;
     flex-direction: column;
+    padding: 5%;
     background-color: rgba(121, 133, 194, 0.551);
     width: 280px;
     border-radius: 8px;
     box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
 }
 .card img {
-    padding-top: 3%;
-    padding-left: 9%;
+    padding: 5%;
     border-radius: 12%;
-    width: 230px;
+    width: 250px;
     height: 180px;  
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;  
+    opacity: 75%;
 }
 .content {
-    padding: 5%;
     padding-top: 0%;
+    height: 215px;
+    overflow: hidden;
+    position: relative;
+}
+.content::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(transparent, #994ca779);
+}
+.content h3 {
+    text-align: center;
+}
+.card button:hover{
+    background-color: transparent;
+    color: rgba(69, 48, 90, 0.429);
+    transition: all 0.2s ease-in-out;
+}
+.card.active .content {
+    height: fit-content;
+}
+.card.active .content::before {
+    visibility: hidden;
 }

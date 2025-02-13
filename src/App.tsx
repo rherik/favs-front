@@ -29,7 +29,7 @@ function App() {
           )}
         </div>
         {isModalOpen && <CreateModal closeModal={handleOpenModal}/>}
-        <button onClick={handleOpenModal}>Novo</button>
+        <button className='novo-cadastro' onClick={handleOpenModal}>Novo</button>
 
       </div>
     </>
